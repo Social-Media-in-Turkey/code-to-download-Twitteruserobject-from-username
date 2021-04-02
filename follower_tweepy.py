@@ -31,7 +31,7 @@ api = tw.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
 # The following code obtains follower's user objects and save as a json file.
 
-screen_name ="SCREEN_NAME" #Insert the Twitter screen name of the user from who you want to get followers.
+screen_name ="SCREEN_NAME"                                   #Insert the Twitter screen name of the user from who you want to get followers.
 
 json_file = open("DATE-SCREEN_NAME-YOURNAME.json", "a")      # This is the format I use for saving user object json files from specific users as date that I retrieved the data, the user's screen name and my name.
 for follower in tw.Cursor(api.followers, screen_name).items():
