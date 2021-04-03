@@ -4,8 +4,9 @@ path = "/TrajectoryThatContainsJSONFiles/*.json"
 so that it can detect all json files in the corresponding file.
 
 '''
-#Define your path name here. 
+#Define your path name here. Example --> path = r'/content/gdrive/MyDrive/Social-Media-in-Turkey/Twitter'
 
+import json
 from google.colab import drive
 drive.mount('/content/gdrive')
 
