@@ -6,6 +6,11 @@ so that it can detect all json files in the corresponding file.
 '''
 #Define your path name here. 
 
+from google.colab import drive
+drive.mount('/content/gdrive')
+
+!ls "/content/gdrive/MyDrive/..." 
+
 def merge_jsons(path):
     result = ''
     for f in glob.glob(path):
